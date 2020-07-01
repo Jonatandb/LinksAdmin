@@ -15,6 +15,12 @@ Links administrator made with React by Jonatandb.
   - Click en "Registrar aplicación"
   - Copiar código de configuración para conexión con Firebase (Este código permite a la aplicación conectarse con Firebase), en mi caso lo guardé en el archivo ".env.production.local"
 
+### Creación y configuración de la base de datos Cloud Firestore (antes se utilizaba Realtime Database)
+
+- Ir a Database -> Crear base de datos
+- Seleccionar "Empezar con el modo de prueba" (En el modo producción solo pueden modificar los datos usuarios autenticados)
+- Click en Siguiente -> Listo
+
 ---
 
 ## Visited Sites:
