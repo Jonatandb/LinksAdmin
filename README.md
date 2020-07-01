@@ -88,3 +88,11 @@ Bootswatch on NPM:
 Materialize - Icons:
 
 - https://materializecss.com/icons.html
+
+Bootstrap - Grid system:
+
+- https://getbootstrap.com/docs/4.0/layout/grid/
+
+A Complete Guide to Flexbox:
+
+- https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background

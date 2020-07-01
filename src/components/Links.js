@@ -24,8 +24,8 @@ export default function Links() {
   };
 
   return (
-    <div>
-      <div className="col-md-4 p-2">
+    <div className="col">
+      <div className="col-md-8 p-2">
         <LinkForm addOrEditLink={addOrEditLink} />
       </div>
       <div className="col-md-8 p-2">
