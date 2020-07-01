@@ -29,7 +29,7 @@ export default function LinkForm({ addOrEditLink }) {
         <input
           type="text"
           className="form-control"
-          placeholder="Http://www.url.com"
+          placeholder="Http://www.some-url.com"
           name="url"
           onChange={handleInputChange}
           value={values.url}
@@ -44,7 +44,7 @@ export default function LinkForm({ addOrEditLink }) {
           type="text"
           className="form-control"
           name="name"
-          placeholder="Website name"
+          placeholder="Website name..."
           onChange={handleInputChange}
           value={values.name}
         />
@@ -53,7 +53,7 @@ export default function LinkForm({ addOrEditLink }) {
       <div className="form-group">
         <textarea
           name="description"
-          placeholder="Write a description"
+          placeholder="Write a description...✍🏻"
           rows="3"
           className="form-control"
           onChange={handleInputChange}

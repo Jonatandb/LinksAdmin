@@ -96,3 +96,7 @@ Bootstrap - Grid system:
 A Complete Guide to Flexbox:
 
 - https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background
+
+Disable zoom on input focus in Android webpage:
+
+- https://stackoverflow.com/questions/7073396/disable-zoom-on-input-focus-in-android-webpage
