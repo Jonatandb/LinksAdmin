@@ -100,3 +100,7 @@ A Complete Guide to Flexbox:
 Disable zoom on input focus in Android webpage:
 
 - https://stackoverflow.com/questions/7073396/disable-zoom-on-input-focus-in-android-webpage
+
+Bootstrap - Justify content:
+
+- https://getbootstrap.com/docs/4.0/utilities/flex/#justify-content

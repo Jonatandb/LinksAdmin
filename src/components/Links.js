@@ -25,10 +25,10 @@ export default function Links() {
 
   return (
     <div className="col">
-      <div className="col-md-8 p-2">
+      <div className="col-lg-12 p-2">
         <LinkForm addOrEditLink={addOrEditLink} />
       </div>
-      <div className="col-md-8 p-2">
+      <div className="col-lg-12 p-2">
         {links.map((link) => (
           <div className="card mb-1" key={link.id}>
             <div className="card-body">
