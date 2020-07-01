@@ -72,3 +72,7 @@ Bootswatch Cyborg Theme:
 Bootswatch on NPM:
 
 - https://www.npmjs.com/package/bootswatch
+
+Materialize - Icons:
+
+- https://materializecss.com/icons.html
