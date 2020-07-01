@@ -104,3 +104,11 @@ Disable zoom on input focus in Android webpage:
 Bootstrap - Justify content:
 
 - https://getbootstrap.com/docs/4.0/utilities/flex/#justify-content
+
+ReactJS and images in public folder:
+
+- https://stackoverflow.com/questions/47196800/reactjs-and-images-in-public-folder
+
+Bootstrap - Vertical alignment:
+
+- https://getbootstrap.com/docs/4.0/utilities/vertical-align/
