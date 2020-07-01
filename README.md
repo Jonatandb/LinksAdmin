@@ -44,3 +44,15 @@ DotEnv:
 Deploy Firebase Apps to Different Environments:
 
 - https://medium.com/@geoffbourne/deploy-firebase-to-different-environments-7ad556e4f4e2
+
+Adding Custom Environment Variables:
+
+- https://create-react-app.dev/docs/adding-custom-environment-variables/
+
+dotenv-webpack:
+
+- https://github.com/mrsteele/dotenv-webpack
+
+Is it safe to expose Firebase apiKey to the public?:
+
+- https://stackoverflow.com/questions/37482366/is-it-safe-to-expose-firebase-apikey-to-the-public
