@@ -4,6 +4,18 @@ Links administrator made with React by Jonatandb.
 
 ---
 
+## Descarga y ejecución:
+
+- Descargar el repo
+- Descomprimir
+- Entrar a la carpeta del proyecto y ejecutar:
+  - yarn
+  - yarn start
+- Acceder desde el navegador a:
+  http://localhost:3000/
+
+---
+
 ## Firebase:
 
 ### Creación del proyecto:
