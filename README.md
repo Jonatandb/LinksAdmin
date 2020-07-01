@@ -56,3 +56,19 @@ dotenv-webpack:
 Is it safe to expose Firebase apiKey to the public?:
 
 - https://stackoverflow.com/questions/37482366/is-it-safe-to-expose-firebase-apikey-to-the-public
+
+Bootstrap:
+
+- https://getbootstrap.com/
+
+Bootswatch:
+
+- https://bootswatch.com/
+
+Bootswatch Cyborg Theme:
+
+- https://bootswatch.com/cyborg/
+
+Bootswatch on NPM:
+
+- https://www.npmjs.com/package/bootswatch
