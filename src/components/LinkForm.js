@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function LinkForm() {
+export default function LinkForm({ addOrEditLink }) {
   const initialState = {
     name: "",
     url: "",
@@ -11,7 +11,8 @@ export default function LinkForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(values);
+    console.log("Submit:", values);
+    addOrEditLink();
   };
 
   const handleInputChange = (e) => {
