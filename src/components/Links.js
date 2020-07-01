@@ -1,9 +1,10 @@
 import React from "react";
 import LinkForm from "./LinkForm";
+import { db } from "../firebase";
 
 export default function Links() {
-  const addOrEditLink = () => {
-    console.log("addOrEditLink():", "New Link!");
+  const addOrEditLink = async (linkObject) => {
+    await db.collection("links").doc().set(linkObject);
   };
 
   return (

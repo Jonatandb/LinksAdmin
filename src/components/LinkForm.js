@@ -11,8 +11,8 @@ export default function LinkForm({ addOrEditLink }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Submit:", values);
-    addOrEditLink();
+    addOrEditLink(values);
+    setValues(initialState);
   };
 
   const handleInputChange = (e) => {
@@ -32,6 +32,7 @@ export default function LinkForm({ addOrEditLink }) {
           placeholder="Http://www.url.com"
           name="url"
           onChange={handleInputChange}
+          value={values.url}
         />
       </div>
 
@@ -45,6 +46,7 @@ export default function LinkForm({ addOrEditLink }) {
           name="name"
           placeholder="Website name"
           onChange={handleInputChange}
+          value={values.name}
         />
       </div>
 
@@ -55,6 +57,7 @@ export default function LinkForm({ addOrEditLink }) {
           rows="3"
           className="form-control"
           onChange={handleInputChange}
+          value={values.description}
         ></textarea>
       </div>
 

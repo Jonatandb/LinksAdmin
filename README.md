@@ -25,7 +25,7 @@ Links administrator made with React by Jonatandb.
 - Sección "Tus aplicaciones" -> Click en "Web" para añadir Firebase a una aplicación Web
   - Especificar nombre de la aplicación
   - Click en "Registrar aplicación"
-  - Copiar código de configuración para conexión con Firebase (Este código permite a la aplicación conectarse con Firebase), en mi caso lo guardé en el archivo ".env.production.local"
+  - Copiar código de configuración para conexión de la aplicación con Firebase.
 
 ### Creación y configuración de la base de datos Cloud Firestore (antes se utilizaba Realtime Database)
 
