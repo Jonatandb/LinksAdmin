@@ -10,8 +10,8 @@ export default function Links() {
   }, []);
 
   const getLinks = () => {
-    const docs = [];
     db.collection("links").onSnapshot((querySnapshot) => {
+      const docs = [];
       querySnapshot.forEach((doc) => {
         docs.push({ ...doc.data(), id: doc.id });
       });
@@ -23,6 +23,12 @@ export default function Links() {
     await db.collection("links").doc().set(linkObject);
   };
 
+  const onDeleteLink = async (id) => {
+    if (window.confirm("Are you sure you want to delete this link?")) {
+      await db.collection("links").doc(id).delete();
+    }
+  };
+
   return (
     <div className="col">
       <div className="col-lg-12 p-2">
@@ -32,7 +38,15 @@ export default function Links() {
         {links.map((link) => (
           <div className="card mb-1" key={link.id}>
             <div className="card-body">
-              <h4>{link.name}</h4>
+              <div className="d-flex justify-content-between">
+                <h5>{link.name}</h5>
+                <i
+                  className="material-icons text-danger"
+                  onClick={() => onDeleteLink(link.id)}
+                >
+                  close
+                </i>
+              </div>
               <p>{link.description}</p>
               <a href={link.url} target="_blank" rel="noopener noreferrer">
                 Go to Website
