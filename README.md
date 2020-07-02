@@ -41,6 +41,10 @@ This repo:
 
 - https://github.com/Jonatandb/LinksAdmin
 
+React & Firebase Firestore CRUD:
+
+- https://www.youtube.com/watch?v=Y9-UkL6ent4
+
 Firebase:
 
 - https://firebase.google.com/
@@ -121,3 +125,15 @@ React-toastify:
 Bootstrap - Colors:
 
 - https://getbootstrap.com/docs/4.0/utilities/colors/
+
+Javascript regular expression to validate URL:
+
+- https://stackoverflow.com/questions/8667070/javascript-regular-expression-to-validate-url
+
+---
+
+<p align="center">
+    <a href="https://ko-fi.com/L3L31N4GV" target="_blank">
+            <img src="https://www.ko-fi.com/img/githubbutton_sm.svg" alt="Support me on Ko-fi"/>
+    </a>
+</p>
