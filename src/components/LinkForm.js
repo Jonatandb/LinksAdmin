@@ -1,11 +1,25 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { db } from "../firebase";
 
-export default function LinkForm({ addOrEditLink }) {
+export default function LinkForm({ addOrEditLink, currentId, links }) {
   const initialState = {
     name: "",
     url: "",
     description: "",
   };
+
+  const getLinkById = async (id) => {
+    const doc = await db.collection("links").doc(id).get();
+    setValues({ ...doc.data() });
+  };
+
+  useEffect(() => {
+    if (currentId === "") {
+      setValues(initialState);
+    } else {
+      getLinkById(currentId);
+    }
+  }, [currentId]);
 
   const [values, setValues] = useState(initialState);
 
@@ -53,7 +67,7 @@ export default function LinkForm({ addOrEditLink }) {
       <div className="form-group">
         <textarea
           name="description"
-          placeholder="Write a description...✍🏻"
+          placeholder="✍🏻 Write a description..."
           rows="3"
           className="form-control"
           onChange={handleInputChange}
@@ -61,7 +75,9 @@ export default function LinkForm({ addOrEditLink }) {
         ></textarea>
       </div>
 
-      <button className="btn btn-primary btn-block">Save</button>
+      <button className="btn btn-primary btn-block">
+        {currentId ? "Update" : "Save"}
+      </button>
     </form>
   );
 }

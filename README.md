@@ -117,3 +117,7 @@ React-toastify:
 
 - https://github.com/fkhadra/react-toastify
 - https://fkhadra.github.io/react-toastify/introduction
+
+Bootstrap - Colors:
+
+- https://getbootstrap.com/docs/4.0/utilities/colors/

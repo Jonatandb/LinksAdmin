@@ -6,6 +6,7 @@ import { toast } from "react-toastify";
 
 export default function Links() {
   const [links, setLinks] = useState([]);
+  const [currentId, setCurrentId] = useState("");
 
   useEffect(() => {
     getLinks();
@@ -22,8 +23,14 @@ export default function Links() {
   };
 
   const addOrEditLink = async (linkObject) => {
-    await db.collection("links").doc().set(linkObject);
-    toast.success("Link added successfully!", {});
+    if (currentId === "") {
+      await db.collection("links").doc().set(linkObject);
+      toast.success("Link added successfully!", {});
+    } else {
+      await db.collection("links").doc(currentId).update(linkObject);
+      toast.info("Link updated successfully!", {});
+      setCurrentId("");
+    }
   };
 
   const onDeleteLink = async (id) => {
@@ -36,7 +43,7 @@ export default function Links() {
   return (
     <div className="col">
       <div className="col-lg-12 p-2">
-        <LinkForm addOrEditLink={addOrEditLink} />
+        <LinkForm {...{ addOrEditLink, currentId, links }} />
       </div>
       <div className="col-lg-12 p-2">
         {links.map((link) => (
@@ -44,13 +51,22 @@ export default function Links() {
             <div className="card-body">
               <div className="d-flex justify-content-between">
                 <h5>{link.name}</h5>
-                <i
-                  className="material-icons text-danger"
-                  onClick={() => onDeleteLink(link.id)}
-                  style={{ cursor: "pointer" }}
-                >
-                  close
-                </i>
+                <div>
+                  <i
+                    className="material-icons text-danger"
+                    onClick={() => onDeleteLink(link.id)}
+                    style={{ cursor: "pointer" }}
+                  >
+                    close
+                  </i>
+                  <i
+                    className="material-icons text-primary"
+                    onClick={() => setCurrentId(link.id)}
+                    style={{ cursor: "pointer" }}
+                  >
+                    create
+                  </i>
+                </div>
               </div>
               <p>{link.description}</p>
               <a href={link.url} target="_blank" rel="noopener noreferrer">
