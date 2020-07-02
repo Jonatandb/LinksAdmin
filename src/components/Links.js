@@ -23,13 +23,13 @@ export default function Links() {
 
   const addOrEditLink = async (linkObject) => {
     await db.collection("links").doc().set(linkObject);
-    toast.success("Link added succesfully!", {});
+    toast.success("Link added successfully!", {});
   };
 
   const onDeleteLink = async (id) => {
     if (window.confirm("Are you sure you want to delete this link?")) {
       await db.collection("links").doc(id).delete();
-      toast.info("Link deleted succesfully!", {});
+      toast.info("Link deleted successfully!", {});
     }
   };
 
@@ -47,6 +47,7 @@ export default function Links() {
                 <i
                   className="material-icons text-danger"
                   onClick={() => onDeleteLink(link.id)}
+                  style={{ cursor: "pointer" }}
                 >
                   close
                 </i>
