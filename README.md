@@ -6,6 +6,14 @@ Demo online: https://jonatandb.github.io/LinksAdmin/
 
 ---
 
+<p align="center">
+    <a href="https://jonatandb.github.io/LinksAdmin/">
+        <img src="Screenshot.png" alt="LinksAdmin by Jonatandb"/>
+    </a>
+</p>
+
+---
+
 ## Descarga y ejecución:
 
 - Descargar el repo
@@ -30,9 +38,13 @@ Demo online: https://jonatandb.github.io/LinksAdmin/
 
 Renombré la carpeta "build" con la versión productiva a "docs" (Como Github Pages requiere) y seleccioné en la configuración del repositorio, en la sección "Github Pages" la opción "master branch /docs folder".
 
-- Se puede ver la versión online accediendo a:
+Por último, agregué en el archivo package.json la url final en la propiedad homepage:
 
-  - https://jonatandb.github.io/LinksAdmin/
+    "homepage": "https://jonatandb.github.io/LinksAdmin/",
+
+Se puede ver la versión online accediendo a:
+
+- https://jonatandb.github.io/LinksAdmin/
 
 ---
 
