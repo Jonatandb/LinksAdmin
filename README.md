@@ -2,6 +2,8 @@
 
 Links administrator made with React by Jonatandb.
 
+Demo online: https://jonatandb.github.io/linksadmin
+
 ---
 
 ## Descarga y ejecución:
@@ -13,6 +15,24 @@ Links administrator made with React by Jonatandb.
   - yarn start
 - Acceder desde el navegador a:
   http://localhost:3000/
+
+---
+
+## Generación de build productivo:
+
+- Ejecutar:
+  - yarn build
+  - Se generará en la carpeta "build"
+
+---
+
+## Github Pages:
+
+Renombré la carpeta "build" con la versión productiva a "docs" (Como Github Pages requiere) y seleccioné en la configuración del repositorio, en la sección "Github Pages" la opción "master branch /docs folder".
+
+- Se puede ver la versión online accediendo a:
+
+  - https://jonatandb.github.io/linksadmin
 
 ---
 
