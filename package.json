@@ -2,6 +2,11 @@
   "name": "linksadmin",
   "version": "0.1.0",
   "private": true,
+  "author": {
+    "name": "Jotandb",
+    "email": "jonatandb@gmail.com",
+    "url": "https://github.com/Jonatandb/"
+  },
   "homepage": "https://jonatandb.github.io/LinksAdmin/",
   "dependencies": {
     "bootswatch": "^4.5.0",

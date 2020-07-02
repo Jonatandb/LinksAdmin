@@ -2,7 +2,7 @@
 
 Links administrator made with React by Jonatandb.
 
-Demo online: https://jonatandb.github.io/linksadmin
+Demo online: https://jonatandb.github.io/LinksAdmin/
 
 ---
 
@@ -32,7 +32,7 @@ Renombré la carpeta "build" con la versión productiva a "docs" (Como Github Pa
 
 - Se puede ver la versión online accediendo a:
 
-  - https://jonatandb.github.io/linksadmin
+  - https://jonatandb.github.io/LinksAdmin/
 
 ---
 
