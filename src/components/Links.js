@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import LinkForm from "./LinkForm";
 import { db } from "../firebase";
+import "react-toastify/dist/ReactToastify.css";
+import { toast } from "react-toastify";
 
 export default function Links() {
   const [links, setLinks] = useState([]);
@@ -21,11 +23,13 @@ export default function Links() {
 
   const addOrEditLink = async (linkObject) => {
     await db.collection("links").doc().set(linkObject);
+    toast.success("Link added succesfully!", {});
   };
 
   const onDeleteLink = async (id) => {
     if (window.confirm("Are you sure you want to delete this link?")) {
       await db.collection("links").doc(id).delete();
+      toast.info("Link deleted succesfully!", {});
     }
   };
 

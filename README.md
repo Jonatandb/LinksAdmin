@@ -112,3 +112,8 @@ ReactJS and images in public folder:
 Bootstrap - Vertical alignment:
 
 - https://getbootstrap.com/docs/4.0/utilities/vertical-align/
+
+React-toastify:
+
+- https://github.com/fkhadra/react-toastify
+- https://fkhadra.github.io/react-toastify/introduction
