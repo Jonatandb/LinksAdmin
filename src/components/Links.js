@@ -13,30 +13,45 @@ export default function Links() {
   }, []);
 
   const getLinks = () => {
-    db.collection("links").onSnapshot((querySnapshot) => {
-      const docs = [];
-      querySnapshot.forEach((doc) => {
-        docs.push({ ...doc.data(), id: doc.id });
+    try {
+      db.collection("links").onSnapshot((querySnapshot) => {
+        const docs = [];
+        querySnapshot.forEach((doc) => {
+          docs.push({ ...doc.data(), id: doc.id });
+        });
+        setLinks(docs);
       });
-      setLinks(docs);
-    });
+    } catch (error) {
+      console.error(error);
+      toast.error("Oops! Something is not working 😢");
+    }
   };
 
   const addOrEditLink = async (linkObject) => {
-    if (currentId === "") {
-      await db.collection("links").doc().set(linkObject);
-      toast.success("Link added successfully!", {});
-    } else {
-      await db.collection("links").doc(currentId).update(linkObject);
-      toast.info("Link updated successfully!", {});
-      setCurrentId("");
+    try {
+      if (currentId === "") {
+        await db.collection("links").doc().set(linkObject);
+        toast.success("Link added successfully!", {});
+      } else {
+        await db.collection("links").doc(currentId).update(linkObject);
+        toast.info("Link updated successfully!", {});
+        setCurrentId("");
+      }
+    } catch (error) {
+      console.error(error);
+      toast.error("Oops! Something is not working 😢");
     }
   };
 
   const onDeleteLink = async (id) => {
-    if (window.confirm("Are you sure you want to delete this link?")) {
-      await db.collection("links").doc(id).delete();
-      toast.info("Link deleted successfully!", {});
+    try {
+      if (window.confirm("Are you sure you want to delete this link?")) {
+        await db.collection("links").doc(id).delete();
+        toast.info("Link deleted successfully!", {});
+      }
+    } catch (error) {
+      console.error(error);
+      toast.error("Oops! Something is not working 😢");
     }
   };
 

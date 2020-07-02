@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { db } from "../firebase";
+import { toast } from "react-toastify";
 
 export default function LinkForm({ addOrEditLink, currentId, links }) {
   const initialState = {
@@ -9,8 +10,13 @@ export default function LinkForm({ addOrEditLink, currentId, links }) {
   };
 
   const getLinkById = async (id) => {
-    const doc = await db.collection("links").doc(id).get();
-    setValues({ ...doc.data() });
+    try {
+      const doc = await db.collection("links").doc(id).get();
+      setValues({ ...doc.data() });
+    } catch (error) {
+      console.error(error);
+      toast.error("Oops! Something is not working 😢");
+    }
   };
 
   useEffect(() => {
