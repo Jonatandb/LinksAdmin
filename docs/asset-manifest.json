@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.js": "/LinksAdmin/static/js/main.24b29f2a.chunk.js",
-    "main.js.map": "/LinksAdmin/static/js/main.24b29f2a.chunk.js.map",
+    "main.js": "/LinksAdmin/static/js/main.b4006811.chunk.js",
+    "main.js.map": "/LinksAdmin/static/js/main.b4006811.chunk.js.map",
     "runtime-main.js": "/LinksAdmin/static/js/runtime-main.938e29aa.js",
     "runtime-main.js.map": "/LinksAdmin/static/js/runtime-main.938e29aa.js.map",
     "static/css/2.8d0e9cb8.chunk.css": "/LinksAdmin/static/css/2.8d0e9cb8.chunk.css",
     "static/js/2.0b67de89.chunk.js": "/LinksAdmin/static/js/2.0b67de89.chunk.js",
     "static/js/2.0b67de89.chunk.js.map": "/LinksAdmin/static/js/2.0b67de89.chunk.js.map",
     "index.html": "/LinksAdmin/index.html",
-    "precache-manifest.06dbc81e7d98dba865fb63987f60c067.js": "/LinksAdmin/precache-manifest.06dbc81e7d98dba865fb63987f60c067.js",
+    "precache-manifest.0b6ca5a7b2702a0da12f27daa79ecf14.js": "/LinksAdmin/precache-manifest.0b6ca5a7b2702a0da12f27daa79ecf14.js",
     "service-worker.js": "/LinksAdmin/service-worker.js",
     "static/css/2.8d0e9cb8.chunk.css.map": "/LinksAdmin/static/css/2.8d0e9cb8.chunk.css.map",
     "static/js/2.0b67de89.chunk.js.LICENSE.txt": "/LinksAdmin/static/js/2.0b67de89.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.938e29aa.js",
     "static/css/2.8d0e9cb8.chunk.css",
     "static/js/2.0b67de89.chunk.js",
-    "static/js/main.24b29f2a.chunk.js"
+    "static/js/main.b4006811.chunk.js"
   ]
 }
